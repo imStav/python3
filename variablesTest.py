@@ -1,5 +1,7 @@
 nombre = 123
 print(nombre)
+# print(type(nombre))
+# exit()
 
 nombre = 3.14
 print(nombre)
