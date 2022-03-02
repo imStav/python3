@@ -5,8 +5,15 @@
 # qu'elle s'affiche correctement en utilisant la fonction help()
 
 # réponse 5.1
+from itertools import count
+from operator import countOf
+import string
+
+
 def multiplication(a: float, b: float) -> float:
     return a * b
+
+help(multiplication)
 
 # exo 5.2
 # Trouvez la position de la chaîne de caractères `minim`
@@ -16,6 +23,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 
 # réponse 5.2
+print(my_text.find('minim'))
 
 # exo 5.3
 # Affectez les caractères de l'index 12 à 20 inclus, de la variable `my_text`, à une autre variable
@@ -26,6 +34,8 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 
 # réponse 5.3
+lorem_ipsum = my_text[12:21]
+print(lorem_ipsum)
 
 # code 5.1
 # La méthode `str.split()` permet de scinder une chaîne de caractères en tableau de chaînes de caractères en utilisant un séparateur
@@ -41,6 +51,8 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 
 # réponse 5.4
+is_it_consectetur = my_text.split(' ')[5]
+print(is_it_consectetur)
 
 # code 5.2
 # En python, un saut de ligne dans une chaîne de caractères peut être obtenu en utilisant un caractère échappé
@@ -69,4 +81,4 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 
 # réponse 5.5
-
+print(len(my_text.split('\n')))
