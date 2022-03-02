@@ -41,10 +41,17 @@ print(round(1 / 3, 4))
 # À chaque fois stockez le résultat dans une variable et affichez le résultat.
 
 # réponse 2.2
-intg = 2
-intg = float(intg)
-print(intg)
+integ = 2
+integ = float(integ)
+print(integ)
+
 floating = 1.62
-floating = round(floating, 0)
 floating = int(floating)
+print(floating)
+floating = 1.62
+floating = round(floating)
+print(floating)
+floating = int(floating)
+print(floating)
+floating = round(1.62, 1)
 print(floating)
