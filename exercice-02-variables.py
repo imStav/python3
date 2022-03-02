@@ -10,6 +10,17 @@
 # Affichez ces variables
 
 # réponse 2.1
+life = 42
+golden = 1.61
+user = "steven averlant"
+morning = True
+access = None
+
+print(life)
+print(golden)
+print(user)
+print(morning)
+print(access)
 
 # code 2.1
 # la fonction `round()` permet d'arrondir un float en un integer
@@ -22,7 +33,7 @@ print(round(0.9))
 print(round(1 / 3, 4))
 
 # exo 2.2
-# Stockez le valeurs suivantes dans une variable et transtypez-les :
+# Stockez les valeurs suivantes dans une variable et transtypez-les :
 # - integer 2 en un float
 # - float 1,62 en un integer
 # - float 1,62 en un float arrondi à zéro chiffre après la virgule, puis en un integer
@@ -30,4 +41,10 @@ print(round(1 / 3, 4))
 # À chaque fois stockez le résultat dans une variable et affichez le résultat.
 
 # réponse 2.2
-
+intg = 2
+intg = float(intg)
+print(intg)
+floating = 1.62
+floating = round(floating, 0)
+floating = int(floating)
+print(floating)
