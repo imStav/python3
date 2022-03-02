@@ -98,7 +98,11 @@ number = random.randint(0, 99)
 print(number)
 
 # réponse 4.6
-if (number <= 33)
+if (number <= 33):
+    print("le nombre est compris entre 0 et 33 inclus")
+elif (number <= 66):
+    print("le nombre est compris entre 34 et 66 inclus")
+else: print("le nombre n'est pas compris entre 0 et 66 inclus")
 
 # exo 4.7
 # écrivez un bloc if qui affiche
@@ -115,6 +119,12 @@ b = random.randint(0, 99)
 print(b)
 
 # réponse 4.7
+if (a > b):
+    print("le nombre a est supérieur au nombre b")
+elif (a < b):
+    print("le nombre a est inférieur au nombre b")
+elif ( a == b):
+    print("les deux nombres a et b sont égaux")
 
 # code 4.3
 # affichage d'une variable avec une f-string
@@ -136,4 +146,9 @@ mails = random.randint(0, 5)
 print(mails)
 
 # réponse 4.8
-
+if mails == 0:
+    print("il n'y a aucun mail")
+elif mails == 1:
+    print("il y un nouveau mail")
+elif mails > 1:
+    print("il y a", mails, "nouveaux mails")
