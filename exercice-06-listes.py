@@ -2,6 +2,7 @@
 
 from gettext import find
 from operator import index
+from pkgutil import iter_importers
 import random
 
 # Remarque 6.1
@@ -85,34 +86,42 @@ my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.10
 for i in range(1):
-     print(sum(my_list) / 6)
+     print(round(sum(my_list) / 6, 2))
 
 # exo 6.11
 # Trouvez l'index de la valeur `3.14` dans la liste et affichez le résultat
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.11
-# for i, item in enumerate(my_list):
-#     if i == 3.14:
-#         print(i, item)
+for i, item in enumerate(my_list, 0):
+    if item == 3.14:
+        print([i], "->", item)
 
 # exo 6.12
 # Comptez les nombres plus petits ou égaux à 10 dans la liste et affichez le résultat
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.12
+for item in my_list:
+    if item <= 10:
+        print(item)
 
-# exo 6.13
+# exo 6.1
 # Multipliez chacun des nombres dans la liste par 100, réaffactez le résultat à la place de la valeur originelle puis affichez le résultat
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.13
+for item in my_list:
+    item *= 100
+    my_list = item
+    print(my_list)
 
 # exo 6.14
 # Créez une deuxième liste ne contenant que les nombre entiers de la liste
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.14
+
 
 # exo 6.15
 # Ici le but est d'intervertir les éléments de la liste deux à deux
