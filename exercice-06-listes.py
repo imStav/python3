@@ -4,6 +4,7 @@ from gettext import find
 from operator import index
 from pkgutil import iter_importers
 import random
+from re import M
 
 # Remarque 6.1
 # Dans le texte, quand il est écrit Xème position, cela correspond à l'index X-1
@@ -111,11 +112,10 @@ for item in my_list:
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.13
-for item in my_list:
-    item *= 100
-    my_list = item
-    print(my_list)
-
+for i in my_list:
+    i *= 100
+    print(i)
+exit()
 # exo 6.14
 # Créez une deuxième liste ne contenant que les nombre entiers de la liste
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
