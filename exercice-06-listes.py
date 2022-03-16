@@ -4,7 +4,7 @@ from gettext import find
 from operator import index
 from pkgutil import iter_importers
 import random
-from re import M
+from re import A, M
 
 # Remarque 6.1
 # Dans le texte, quand il est écrit Xème position, cela correspond à l'index X-1
@@ -108,20 +108,22 @@ for item in my_list:
         print(item)
 
 # exo 6.1
-# Multipliez chacun des nombres dans la liste par 100, réaffactez le résultat à la place de la valeur originelle puis affichez le résultat
+# Multipliez chacun des nombres dans la liste par 100, réaffectez le résultat à la place de la valeur originelle puis affichez le résultat
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.13
-for i in my_list:
-    i *= 100
-    print(i)
-exit()
+i = 0
+while i < len(my_list):
+    my_list[i] = my_list[i]*100
+    # print(my_list[i])
+    i += 1
+print(my_list)
+
 # exo 6.14
 # Créez une deuxième liste ne contenant que les nombre entiers de la liste
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.14
-
 
 # exo 6.15
 # Ici le but est d'intervertir les éléments de la liste deux à deux
