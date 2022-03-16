@@ -6,12 +6,15 @@ import random
 # en utilisant une boucle for, affichez les nombre de 0 à 99 inclus
 
 # réponse 7.1
-
+for i in range(0,100):
+    print(i)
 
 # exo 7.2
 # en utilisant une boucle for, affichez les nombre de 0 à 100 inclus
 
 # réponse 7.2
+for i in range(0,101):
+    print(i)
 
 # code 7.1
 # affectation d'un nombre aléatoire compris entre 1 et 10 inclus
@@ -22,6 +25,7 @@ number = random.randint(1, 10)
 # affichez `r` s'il est égal à 1
 
 # réponse 7.3
+
 
 # exo 7.4
 # en utilisant une boucle for, on tire 50 fois un nombre entier `r` au hasard entre 1 et 10 inclus
