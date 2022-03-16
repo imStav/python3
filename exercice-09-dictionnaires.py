@@ -9,6 +9,14 @@
 # Puis affichez le résultat avec un simple `print()`
 
 # réponse 9.1
+my_dict = {
+    'one': 9,
+    'two': 4.2,
+    'three': 'i am not a tree',
+    'four': True
+}
+
+print(my_dict)
 
 # exo 9.2
 # Créez un dictionnaire nommé `my_dict` associant :
@@ -19,6 +27,14 @@
 # Puis affichez le résultat avec un simple `print()`
 
 # réponse 9.2
+my_dict = {
+    'five': 5,
+    'six': 6.1,
+    'seven': 'sevenUP',
+    'eight': True
+}
+
+print(my_dict)
 
 # exo 9.3
 # Ajoutez au dictionnaire un élément qui associe la clé alphanumérique `ipsum` à la valeur `2.71`
