@@ -130,6 +130,8 @@ my_dict = {
 # etc...
 
 # réponse 9.9
+for i in my_dict:
+    print(my_dict)
 
 # exo 9.10
 # En utilisant une boucle `for` et la méthode `items()`, affichez les clés et les valeurs qui se trouvent dans le dictionnaire
