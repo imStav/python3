@@ -11,6 +11,14 @@ import string
 
 
 def multiplication(a: float, b: float) -> float:
+    """
+    Cette fonction renvoie le produit des 2 nombres.
+    a : le premier facteur
+    b : le second facteur
+
+    return : le produit des 2 facteurs
+    """
+
     return a * b
 
 help(multiplication)
