@@ -1,6 +1,7 @@
 # exercice-06-listes.py
 
 from gettext import find
+from multiprocessing.sharedctypes import Value
 from operator import index
 from pkgutil import iter_importers
 import random
@@ -112,11 +113,13 @@ for item in my_list:
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.13
-i = 0
-while i < len(my_list):
-    my_list[i] = my_list[i]*100
-    # print(my_list[i])
-    i += 1
+# i = 0
+# while i < len(my_list):
+#     my_list[i] = my_list[i]*100
+#     i += 1
+
+for i in range(len(my_list)):
+    my_list[i] *= 100
 print(my_list)
 
 # exo 6.14
@@ -143,6 +146,9 @@ my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.16
+for i in my_list:
+    my_list.sort()
+print(my_list)
 
 # code 6.1
 # Lire la valeur de la ligne `m` et de la colonne `n` d'un tableau en 2 dimensions
@@ -170,6 +176,7 @@ for _ in range(0, size):
 print(matrix)
 
 # réponse 6.17
+print(matrix[4-1][3-1])
 
 # code 6.2
 # Pour afficher toutes les combinaisons possibles de deux nombres de 0 à n inclus vous pouvez utiliser deux boucles `for` imbriquées
@@ -183,4 +190,3 @@ for i in range(0, 3):
 # Avec le même tableau en 2 dimensions, affichez toutes les valeurs plus petites ou égales à 50 ainsi que leur cordoonnées (ligne et colonne)
 
 # réponse 6.18
-
