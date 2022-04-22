@@ -107,6 +107,12 @@ def meters_to_miles(meters):
     return miles
 
 print(meters_to_miles(1000))
+
+def miles_to_meters(miles):
+    meters = miles * 1609.344
+    return meters
+
+print(miles_to_meters(1))
 # exo 10.7
 # Créer une fonction nommée `compute_tax()` qui :
 # - prend un paramètre nommé `price` de type `float`
@@ -121,4 +127,24 @@ print(meters_to_miles(1000))
 # Référence : [Quels sont les taux de TVA en vigueur en France et dans l'Union européenne ? | economie.gouv.fr](https://www.economie.gouv.fr/cedef/taux-tva-france-et-union-europeenne)
 
 # réponse 10.7
+def compute_tax(price: float, tax_type: int):
+    if tax_type == 1:
+        price *= 1.021
+        return price
+    elif tax_type == 2:
+        price *= 1.055
+        return price
+    elif tax_type == 3:
+        price *= 1.1
+        return price
+    elif tax_type == 4:
+        price *= 1.2
+        return price
+    else:
+        return price
 
+print(compute_tax(100.00, 1))
+print(compute_tax(100.00, 2))
+print(compute_tax(100.00, 3))
+print(compute_tax(100.00, 4))
+print(compute_tax(100.00, 0))
